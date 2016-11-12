@@ -1,5 +1,5 @@
 {
-  "name": "sails-auth",
+  "name": "sails-passport-hook",
   "version": "2.2.0",
   "description": "Passport-based User Authentication system for sails.js applications.",
   "main": "dist/api/hooks/auth/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tjwebb/sails-auth.git"
+    "url": "git://github.com/explicitcall/sails-passport-hook.git"
   },
   "keywords": [
     "sails",
@@ -32,9 +32,9 @@
   "author": "Travis Webb <me@traviswebb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjwebb/sails-auth/issues"
+    "url": "https://github.com/explicitcall/sails-passport-hook/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-auth",
+  "homepage": "https://github.com/explicitcall/sails-passport-hook",
   "dependencies": {
     "base64url": "^2.0.0",
     "bcryptjs": "^2.2",
@@ -73,6 +73,6 @@
   },
   "sails": {
     "isHook": true,
-    "hookName": "auth"
+    "hookName": "passport"
   }
 }

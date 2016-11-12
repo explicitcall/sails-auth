@@ -1,7 +1,6 @@
-# sails-auth
+# sails-passport-hook
 
-[![Looking for maintainers][hacktober-image]][hacktober-url]
-
+This is a fork of unmaintained [sails-auth](https://github.com/langateam/sails-auth).
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -11,7 +10,7 @@
 
 ## 1. Install
 ```sh
-$ npm install sails-auth --save
+$ npm install sails-passport-hook --save
 ```
 This will install `sails-auth` as a Sails Hook. The Hook uses
 [marlinspike](https://github.com/tjwebb/marlinspike) to inject the relevant
@@ -65,16 +64,11 @@ For comprehensive user account control with role-based permissioning, object own
 MIT
 
 ## Maintained By
-[<img src='http://i.imgur.com/Y03Jgmf.png' height='64px'>](http://langa.io)
-- [Travis Webb](https://github.com/tjwebb)
-- [Ryan Quinn](https://github.com/ryanwilliamquinn)
-- [Contributors](https://github.com/langateam/sails-auth/graphs/contributors)
+- [Max Desiatov](https://github.com/explicitcall)
 
-[npm-image]: https://img.shields.io/npm/v/sails-auth.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/sails-auth
-[travis-image]: https://img.shields.io/travis/langateam/sails-auth.svg?style=flat-square
-[travis-url]: https://travis-ci.org/langateam/sails-auth
-[daviddm-image]: http://img.shields.io/david/langateam/sails-auth.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/langateam/sails-auth
-[hacktober-image]: http://i.imgur.com/FM9yVCI.png
-[hacktober-url]: https://twitter.com/langateam/status/782995392212369408
+[npm-image]: https://img.shields.io/npm/v/sails-passport-hook.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/sails-passport-hook
+[travis-image]: https://img.shields.io/travis/explicitcall/sails-passport-hook.svg?style=flat-square
+[travis-url]: https://travis-ci.org/explicitcall/sails-passport-hook
+[daviddm-image]: http://img.shields.io/david/explicitcall/sails-passport-hook.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/explicitcall/sails-passport-hook
