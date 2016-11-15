@@ -52,6 +52,18 @@ describe('Auth Controller', function () {
 
       });
 
+      it ('passport logout should fail and return 400 if method is not POST', function (done) {
+
+        request(sails.hooks.http.app)
+            .get('/logout')
+            .send({})
+            .expect(400)
+            .end(function(err) {
+              done(err);
+            });
+
+      });
+
     });
 
     describe('socket request', function () {

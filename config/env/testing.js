@@ -31,5 +31,8 @@ module.exports = {
     AuthController: { '*': [ 'passport' ] },
     UserController: { create: true }
   },
-  port: 1448
+  port: 1448,
+  routes: {
+    'get /logout': 'AuthController.logout',
+  },
 };

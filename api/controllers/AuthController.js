@@ -20,6 +20,7 @@ module.exports = {
   logout: function (req, res) {
     if (req.method.toUpperCase() != 'POST') {
       res.send(400);
+      return;
     }
     req.logout();
     delete req.user;
