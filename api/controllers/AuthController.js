@@ -18,6 +18,9 @@ module.exports = {
    * @param {Object} res
    */
   logout: function (req, res) {
+    if (req.method.toUpperCase() != 'POST') {
+      res.send(400);
+    }
     req.logout();
     delete req.user;
     delete req.session.passport;
