@@ -18,6 +18,12 @@ module.exports = {
    * @param {Object} res
    */
   logout: function (req, res) {
+    // As the logout action has a side-effect, clients shouldn't be able to
+    // invoke it with a GET method. A good example of a bug caused by a lack
+    // of such check were initially unexplained logouts caused by browser
+    // preloads. In a lot of browsers just typing an endpoint address in an
+    // address bar will cause a logout due to preloading request sent to logout
+    // endpoint.
     if (req.method.toUpperCase() != 'POST') {
       res.send(400);
       return;
